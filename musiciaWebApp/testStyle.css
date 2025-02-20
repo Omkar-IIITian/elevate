@@ -1,0 +1,113 @@
+Featured Section */
+#featured {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.song-card {
+    background-color: rgb(40, 40, 40);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.song-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.song-card h3, .song-card p {
+    margin: 10px 0;
+}
+
+/* Song List Section */
+#songs {
+    margin-bottom: 30px;
+}
+
+.song-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.song-item {
+    background-color: rgb(40, 40, 40);
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.song-item h3, .song-item p {
+    margin: 10px 0;
+}
+
+/* About Section */
+#about {
+    background-color: rgb(29, 185, 84);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(25, 20, 20);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    background-color: rgb(40, 40, 40);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: rgb(30, 215, 96);
+    color: rgb(25, 20, 20);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(29, 185, 84);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#song-image{
+    width: 20%;
+    height: 20%;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MyPortfolio</title>
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <section class="hello" id="home">
+              <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                <div class="bg-dark p-4">
+                  <button type="button" class="btn btn-secondary" onclick="location.href='#intro'">Home</button>
+                  <button type="button" class="btn btn-secondary" onclick="location.href='#aboutMe'"> What I Do</button>
+                  <button type="button" class="btn btn-secondary" onclick="location.href='#myProjects'">My Projects</button>
+                  <button type="button" class="btn btn-secondary">Haha Unused</button>
+                  
+
+                </div>
+              </div>
+              <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </nav>
+            </section>
+            <section id="intro">
+              <div class="my_div">
+                  <div class="about"><h1>Hi, I'm omkar, crafting digital solutions.</h1><p><>Welcome to My Portfolio — A Showcase of My Work, Skills, and Projects Crafted with Passion and Precision<\>.</p></div>
+                  <div class="image"><img  class="my_image test image1" src="./assets/images/myProfileImg.png" style="background:none;"> </div>
+              </div>       
+            </section>
+            <section id="aboutMe">
+               <div class="passion">
+                  <h5>"Dream it, build it, live it."</h5>
+                  <h5 class="xyz">WHAT I DO</h5>
+               </div>
+               <div class="whatIDo">
+                  <div class="card first"><img src="./assets/images/DSA.png" class="png"><p>🎯 Fun Fact: I scored 84 marks in Computer Programming and have covered most DSA topics, but I don’t have a competitive programming profile yet. (Stay tuned—I’m building a strong one soon! 💪)</p></div>
+                  <div class="card second"><img src="./assets/images/images.png" class="png">
+                    <p>✅ Frontend: Mastered HTML, CSS (Bootstrap), JS for responsive designs.<br>
+                    🚀 Backend: Worked with Node.js, Express, EJS, now building APIs.<br>
+                    🛠️ Next: Learning Databases & React.<br>
+                    🌐 Web3 Enthusiast.
+                  </p></div>
+                  <div class="card third"><img src="./assets/images/aiImage.png" class="png"><p>🤖 Love Gen AI – Passionate about using Generative AI tools.<br>
+                    🛠️ Hands-on – Worked with V0, Cursor, Bolt (Vercel).<br>
+                    🚀 Always Exploring – Excited to learn & experiment with AI.<br>
+                    </p></div>
+               </div>
+            </section>
+            <section class="myProjects" id="myProjects">
+               <h2>My Projects</h2>
+               <div class="grid">
+                   <div><a href="./designedMemoryCardGame/index.html"><img class=" test image1" src="./assets//images/memoryGame.jpg"></a></div>
+                   <div class="subGrid first"><h1>Memory-Card Game</h1> <p>
+                    🎮 Memory Card Game – Built by Me! <br>
+
+                    🃏 A fun game to test memory & focus!<br>
+                    🛠️ Made with HTML, CSS, JS for smooth play.<br>
+                    ⏳ Features flip-to-match, move tracking & timer.<br>
+                    🔥 Built to enhance logic, UI & JS skills!</p></div>                 
+                   <div class="subGrid first"><h1>API-Crypto-Tracker</h1> <p>
+                    🚀 Crypto Info App – API-Powered Project <br>
+
+                    💰 Live Crypto Data – Integrated a cryptocurrency API to fetch and display real-time prices, trends, and market stats.<br>
+                    
+                    🛠️ Tech Stack – Built using Node.js, Express, and EJS, showcasing my backend development skills.<br>
+                    
+                    📡 API Integration – Seamlessly connected to a crypto data provider, handling requests and updating data dynamically.<br>
+                    
+                    🔥 Why I Built It? – To enhance my API handling, backend logic, and dynamic data rendering skills.<br></p></div>
+                   <div><a href="./realTimeCryptoTracker/index.js"><img src="./assets/images/crypto-api-porject.jpg" class="test image1"></a></div>
+                   <div><a href="./musiciaWebApp/index.html"><img src="./assets/images/musicHub.jpg" class="test image1"></a></div>
+                   <div class="subGrid first"><h1>MusicHub</h1> <p>🎵 Music Player App – Built by Me!<br>
+
+                    🎧 Seamless Listening – A music player that lets you play, pause, and switch tracks effortlessly.<br>
+                    
+                    🛠️ Tech Stack – Developed using HTML, CSS, and JavaScript, showcasing my frontend & UI/UX skills.<br></p></div>                  
+                  
+               </div>
+            </section>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

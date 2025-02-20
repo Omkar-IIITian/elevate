@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="logo.png" sizes="32x32">
+</head>
+<body>
+    <header>
+        <h1><img src="logo.png" id="sourceImage">Welcome to MusicHub</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#songs">Songs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured">
+            <h2>Featured Song</h2>
+            <div class="song-card" id="songCard">
+                <img src="./hearingImage.webp" alt="Featured Song Thumbnail" id="song-image">
+                <h3>BELIEVER</h3>
+                <p>IMAGINE DRAGON</p>
+                <audio controls>
+                    <source src="titleSong.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+        <section id="songs">
+            <h2>All Songs</h2>
+            <div class="song-list">
+                <div class="song-item">
+                    <h3>SUN RAHA HE NA TU</h3>
+                    <p>AASHIQUE 2</p>
+                    <audio controls>
+                        <source src="sunRahaHeNa.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="song-item">
+                    <h3>Song Title 2</h3>
+                    <p>Artist 2</p>
+                    <audio controls>
+                        <source src="song2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <!-- Add more song items as needed -->
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>MusicHub is your ultimate destination for listening to your favorite songs. Discover new tracks, artists, and much more!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MusicHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

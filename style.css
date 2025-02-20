@@ -1,0 +1,168 @@
+html, body {
+    display: block;
+    height: 100%;
+    background-color: #0a0a0a; /* Dark stormy background */
+    color: #e0e0e0; /* Light text for contrast */
+}
+
+.main {
+    overflow: hidden;
+    width: 85%;
+    margin: 7.5%;
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a); /* Metallic dark background */
+    display: inline-block;
+    border: 3px solid #d7d7d7;
+    border-top: 7px solid #e0e0e0;
+    border-right: 12px solid #e0e0e0;
+    border-radius: 3%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.my_image {
+    width: 100%;
+    height: 100%;
+    grid-area: 2/2/3/3;
+}
+
+.test.image1:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 20px #00b4d8;
+    filter: brightness(1.2);
+}
+
+.my_div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.about {
+    flex: 1;
+    margin: 5%;
+}
+
+.about > h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.about > p {
+    font-weight: 500;
+}
+
+.image {
+    flex: 1;
+    margin: 5%;
+}
+
+.xyz {
+    font-weight: bold;
+    color: #00b4d8;
+}
+
+.whatIDo {
+    display: flex;
+    gap: 5%;
+}
+
+.card {
+    color:white;
+    flex: 1;
+    border: 2px solid #00b4d8;
+    border-radius: 5%;
+    border-right: 7px solid #008cba;
+    border-top: 7px solid #008cba;
+    background: linear-gradient(135deg, #212121, #424242);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00b4d8;
+}
+
+.card.first {
+    margin-left: 10%;
+}
+
+.card.third {
+    margin-right: 10%;
+}
+
+.png {
+    width: 50%;
+    align-self: center;
+    margin-top: 5%;
+    border-radius: 10%;
+}
+
+.card > p {
+    margin: 5%;
+}
+
+.passion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myProjects > h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: block;
+    margin-left: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: #00b4d8;
+}
+
+.grid {
+    margin: 2%;
+    column-gap: 2%;
+    row-gap: 0.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.test.image1 {
+    width: 100%;
+    height: 100%;
+}
+
+.subGrid.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 850px) {
+    .my_div {
+        flex-direction: column;
+    }
+    .about > h1 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 850px) {
+    .whatIDo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card.first, .card.third, .card.second {
+        margin: 10%;
+    }
+}
+
+@media (max-width: 820px) {
+    .grid {
+        grid-template-columns: 1fr;
+        margin: 20%;
+    }
+}
